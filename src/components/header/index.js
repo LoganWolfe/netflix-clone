@@ -88,8 +88,8 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
   return <PlayButton {...restProps}>{children}</PlayButton>;
 };
 
-Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }) {
-  return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>;
+Header.FeatureCallOut = function HeaderFeatureCallOut({src, ...restProps }) {
+  return <FeatureCallOut {...restProps} src={`/images/users/${src}.png`} />;
 };
 
 Header.Text = function HeaderText({ children, ...restProps }) {

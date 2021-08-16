@@ -45,7 +45,7 @@ export function BrowseContainer({ slides }) {
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
 
-      <Header src="joker1" dontShowOnSmallViewPort>
+      <Header src="free" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
             <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
@@ -85,15 +85,16 @@ export function BrowseContainer({ slides }) {
         </Header.Frame>
 
         <Header.Feature>
-          <Header.FeatureCallOut>Watch Joker Now</Header.FeatureCallOut>
+          <Header.FeatureCallOut src={'../misc/free-logo'} />
           <Header.Text>
-            Forever alone in a crowd, failed comedian Arthur Fleck seeks
-            connection as he walks the streets of Gotham City. Arthur wears two
-            masks -- the one he paints for his day job as a clown, and the guise
-            he projects in a futile attempt to feel like he's part of the world
-            around him.
+            When a bank teller discovers he's actually a background player in an
+            open-world video game, he decides to become the hero of his own
+            story -- one that he can rewrite himself.
           </Header.Text>
-          <Header.PlayButton>Play</Header.PlayButton>
+          <Player>
+            <Player.Button />
+            <Player.Video src="/videos/free.mp4" />
+          </Player>
         </Header.Feature>
       </Header>
 

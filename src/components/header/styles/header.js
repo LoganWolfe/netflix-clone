@@ -4,10 +4,22 @@ import { Link as ReachRouterLink } from 'react-router-dom';
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover
-    no-repeat;
-  @media (max-width: 1100px) {
-    ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    ),
+    url(${({ src }) =>
+      src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'})
+      top left / cover no-repeat;
   }
 `;
 
@@ -164,7 +176,7 @@ export const Profile = styled.div`
 `;
 
 export const Feature = styled(Container)`
-  padding: 150px 0 500px 0;
+  padding: 50px 0 600px 0;
   flex-direction: column;
   align-items: normal;
   width: 50%;
@@ -173,20 +185,24 @@ export const Feature = styled(Container)`
   }
 `;
 
-export const FeatureCallOut = styled.h2`
-  color: white;
-  font-size: 50px;
-  line-height: normal;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
-  margin: 0;
+export const FeatureCallOut = styled.img`
+  max-width: 60%;
+  height: 200px;
+  // height: 200px;
+  // width: 500px;
+  // margin-right: 40px;
+  // @media (min-width: 1449px) {
+  //   height: 45px;
+  //   width: 167px;
+  // }
 `;
 
 export const Text = styled.p`
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   line-height: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+  max-width: 70%;
 `;
 
 export const Logo = styled.img`
