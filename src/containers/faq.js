@@ -6,7 +6,7 @@ import faqData from '../fixtures/faqs.json';
 export function FaqContainer() {
   return (
     <Accordion>
-      <Accordion.Title> Frequently Asked Questions </Accordion.Title>
+      <Accordion.Title>Frequently Asked Questions</Accordion.Title>
       {faqData.map((item) => (
         <Accordion.Item key={item.id}>
           <Accordion.Header>{item.header}</Accordion.Header>
