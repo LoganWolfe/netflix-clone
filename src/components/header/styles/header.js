@@ -6,9 +6,11 @@ export const Background = styled.div`
   flex-direction: column;
   background: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 1)
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, .25),
+      rgba(0, 0, 0, .7),
+      rgba(0, 0, 0, .8)
     ),
     linear-gradient(
       to bottom,
