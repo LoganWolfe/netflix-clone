@@ -2,7 +2,7 @@
 ![Netflix Clone Preview](./preview-images/preview.png)
 
 ## Announcements
-- I received a request from Netflix itself to take down the clone (reasonably so), thus the hosted service is no longer avaiable to the public. 
+- I received a request from Netflix itself to take down the clone (reasonably so), thus the hosted service is no longer available to the public. 
 - You can still follow the instructions below to host the website yourself though, or I can demo it in an interview 😉
   
 ## Features
